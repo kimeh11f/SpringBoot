@@ -13,6 +13,7 @@
 		<ul class="timeline">
 			<div th:each="entry, status : ${journal}">
 				<li th:attr="class=${status.odd}? 'timeline-inverted':''">
+					<div class="tl-circ"></div>
 					<div class="timeline-panel">
 						<div class="tl-heading">
 							<h4>
@@ -26,7 +27,7 @@
 							</p>
 
 						</div>
-						<div class="tl=body">
+						<div class="tl-body">
 							<p>
 								<span th:text="${entry.summary}">요약</span>
 							</p>
